@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20151118T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Arbeiten" description="Ein Vorgabe-Arbeitstag"/>
+      <day-type id="1" name="Nicht Arbeiten" description="Ein Vorgabetag, an dem nicht gearbeitet wird"/>
+      <day-type id="2" name="Basis verwenden" description="Tag vom Basiskalender verwenden"/>
+    </day-types>
+    <calendar id="1" name="Vorgabe">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Example Project Google CardBoard" note="" work="201600" start="20151118T000000Z" end="20151126T170000Z" work-start="20151118T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="Get TimeTable Data" note="" work="201600" start="20151125T000000Z" end="20151203T170000Z" work-start="20151125T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20151125T000000Z"/>
+    </task>
+    <task id="3" name="write TimeTable Reader" note="" work="201600" start="20151203T170000Z" end="20151214T170000Z" work-start="20151204T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20151202T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="4" name="get 3D modells" note="" work="201600" start="20151209T000000Z" end="20151217T170000Z" work-start="20151209T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20151209T000000Z"/>
+    </task>
+    <task id="5" name="implement 3D modells to our App" note="" work="201600" start="20151217T170000Z" end="20151228T170000Z" work-start="20151218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20151214T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="4" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="6" name="display time table" note="" work="201600" start="20151222T000000Z" end="20151230T170000Z" work-start="20151222T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20151222T000000Z"/>
+    </task>
+    <task id="7" name="prepare final presenation" note="" work="259200" start="20160104T000000Z" end="20160114T170000Z" work-start="20160104T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20160104T000000Z"/>
+    </task>
+    <task id="8" name="final presentation" note="" work="0" start="20160122T000000Z" end="20160122T000000Z" work-start="20160122T080000Z" percent-complete="32" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="start-no-earlier-than" time="20160122T000000Z"/>
+      <predecessors>
+        <predecessor id="1" predecessor-id="7" type="FS"/>
+      </predecessors>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>
