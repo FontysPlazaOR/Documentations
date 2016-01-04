@@ -1,0 +1,43 @@
+\makeatletter
+	\@ifclassloaded{article}{\usepackage{beamerarticle}}{}
+\makeatother
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage{pgfpages}
+\usepackage{handoutWithNotes}
+
+
+\usetheme{Hannover}
+\usecolortheme{orchid}
+\usefonttheme{professionalfonts}
+\useinnertheme{rounded}
+\useoutertheme{default}
+
+
+\setbeamercovered{transparent}
+\setbeamertemplate{footline}[frame number]
+\makeatletter
+	\@ifclassloaded{article}{}{\beamertemplatenavigationsymbolsempty}
+\makeatother
+
+
+\title[RoomScan]{Room Scanner}
+\subtitle[GRAP]{3D programming with OpenGL}
+
+\author[RG \& MW]{Ron Gebauer \& Maximilian Walter}
+\institute[FUoASV]{Fontys University of Applied Science Venlo}
+
+\date[\today]{\today}
+
+%\logo{\pgfimage[width=2cm,height=2cm]{hulogo}}
+
+%\titlegraphic{\includegraphics[width=2cm,height=2cm]{hulogo}}
+
+\subject{Created in Android for Vuzix M100}
+\keywords{Vuzix, M100, Android, Java, GRAP, OpenGL}
