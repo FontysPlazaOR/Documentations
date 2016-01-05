@@ -2,7 +2,7 @@
 
 %opening
 \title{GRAPH}
-\author{Ron Gebauer, Maximilian Walter}
+\author{Ron Gebauer \and Maximilian Walter}
 
 \begin{document}
 
@@ -13,13 +13,20 @@ This is the abstract.
 \end{abstract}
 
 \section{Introduction}
-brief assignment description
+Problems occur when a student tries to find a free room for the next hours. The information wether a room is available or not can not be seen directly at the desired place. In this project the human eye will be extended with information about the enviroment. This will done using the Vuzix Smart Glasses and augmented reality. When scanning a QR-Code that contains the room number, information about the occupacity of the room is displayed on the Vuzix. 
 \section{Technologies Used}
+\subsection{Google CardBoard}
+The initial idea was to use Googles CardBoard for displaying the Element that indicates wether a room is available. Before the start of the development, it occured that Google CardBoard is good for virtual reality where there is no connection to the outside world. Augmented reality, where still a part of the 'real world' is hardly possible with Google CardBoards since the camera is one sided and no overlaying is possible.   
+\subsection{Vuzix M100}
+The vuzix M100 Smart Glasses can be used for augmented reality. 
+\subsection{Android and OpenGL ES}
+The operating system on the smart glasses is Android. Apps are developed in Java. OpenGL Elements are displayed using the OpenGL ES technique. 
+\\
+The Android SDK and the IDE Eclipse are needed to develop for Android. To emulate the Vuzix, the Virtual Device has to be created using the Android Virtual Device Manager. 
 \section{Architecture}
-rough design of your solution), this includes the various mappings to
-OpenGL concepts, mobile devices, game IDE, VR toolkit, whatever applicable.
+The architecture relies on mainly three classes. Despite the \emph{MainActivity} that starts the internal \emph{Scanner}-App that reads the QR-Code, The \emph{TimeTableReader} class is needed to give information about the occupation of the rooms. Finaly the \emph{RenderActivity} displays the information in form of OpenGL elements on the screen.   
 \section{Discussion}
-state of project, open questions
+The current project is a prototype that reads a QR-Code and bases on that displays two different forms. Getting access to the real timetable is needed to put this application to use. Furthermore it is adviseable to extend the Renderer to display information not only about the current state of the room but also to give information about the next hours, days and weeks.  
 \section{Conclusion}
 One section per student (about INDIVIDUAL WORK, add your name): what is it about/for,
 your approach to learn about it, how does it fit in, how to use, main problems encountered,
