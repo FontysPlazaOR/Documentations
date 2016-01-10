@@ -1,6 +1,7 @@
 \documentclass[11pt]{scrartcl}
 
 \usepackage[english,english]{babel}
+\usepackage{cite}
 \usepackage{cmbright}
 \usepackage[iso,english]{isodate}
 \usepackage[T1]{fontenc}
@@ -16,10 +17,11 @@
 \author{Ron Gebauer \and Maximilian Walter}
 \date{\today}
 
+
 \begin{document}
 
 \maketitle
-
+\nocite{*}
 \begin{abstract}
 	Scanning a QR-Code with room information with a device is possible using the Vuzix M100. Even though the developer community of Vuzix is small and the access is limited, the development for Android with OpenGL ES resulted in a suitable proof of concept for doing so. 
 \end{abstract}
@@ -75,6 +77,9 @@
 		The use case of the project does not offer much possibilites to extense the skills learned in the OpenGL Course. Even \linebreak though OpenGL elements are used within the application, the hardest part was to the get the Vuzix and its emulator uptodate. Information is rare and a big developer community does not exist for this kind of hardware. \\
 		Luckily Vuzix runs Android applications, which can be emulated with every other device. That is why the first steps took place using the smartphone phone emulator provided by Eclipse. \\
 \end{multicols}
+
+\bibliographystyle{fontysIEEtranN}
+\bibliography{literature}
 
 \section*{Appendix}
 needed? QR-Codes ? or class diagram?
