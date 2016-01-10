@@ -29,7 +29,7 @@
 
 \begin{multicols}{2}
 	\section{Introduction}
-	This article contains information about a small part project of \glqq Fontys Plaza\grqq. \glqq Fontys Plaza\grqq\ is a project of the module GRAP at the Fontys University of Applied Science in Venlo, whose content is the creation of virtual or augmented realities.
+	This article contains information about a small part project of \glqq Fontys Plaza\grqq. \glqq Fontys Plaza\grqq\ is a project of the module GRAP at the Fontys University of Applied Science in Venlo, whose content is the creation of OpenGL Elements which are often used in virtual or augmented realities.
 	
 	This small part deals with the extension of reality by information on various classrooms. It happens all too often that a teacher searches for a free classroom to do some work but this room is often occupied 10 minutes later by the next class. Consequently, the teacher then has to move to the next room, where he might find the same problem. Would not it be a lot easier if the lecturer already sees when and how long a classroom is occupied or free by watching the door.
 	This project tried by using the Vuzix M100, a SmartGlass, to solve this problem. For this will a QR-Code, which contains the name or number of the room, be scanned and analyzed to then display a symbol with accompanying information.
@@ -39,7 +39,7 @@
 		\subsection{Google CardBoard}
 			The initial idea was to use Googles CardBoard for displaying the Element that indicates whether a room is available or not. Before the start of the development, it occurred that Google CardBoard is good for virtual reality where is no connection to the outside world. Augmented reality, where still a part of the \emph{real world} is shown, is hardly possible with Google CardBoards since the camera is one sided and no overlaying is possible.
 	
-			Another drawback of the CardBoard is the fact that both eyes are needed to see the 3D Elements.   
+			Another drawback of the CardBoard is the fact that both eyes are needed to see the 3D Elements. This limits the movement within the school.   
 		
 		\subsection{Vuzix M100}
 			The Vuzix M100 Smart Glasses can be used for augmented reality. By using one eye for the \emph{real World} and one eye for the application it is possible to display additional information to the users environment.
@@ -69,7 +69,7 @@
 			\end{itemize}
 			 Problems occurred in setting up the Vuzix for development. After the reorganization of the Vuzix-Website not all information have been accessible.
 			 
-			 Since the OpenGL ES technique is very similar to the JOGL and OpenGL exercises in the module \emph{OpenGL}, the drawing itself caused no problem, despite the fact that rendering an image as texture is not possible. Since this was no requirement, no image is used in the current state of the application.  One negative aspect was the fact, that the emulator does not work, therefore the complete developer team had to rely on one Vuzix. This slowed down the development process.
+			 Since the OpenGL ES technique is, in version 1, very similar to the JOGL and OpenGL exercises in the module \emph{OpenGL}, the drawing itself caused no problem, despite the fact that rendering an image as texture is not possible. Since this was no requirement, no image is used in the current state of the application.  One negative aspect was the fact, that the emulator does not work, therefore the complete developer team had to rely on one Vuzix. This slowed down the development process.
 			 
 			 A big problem was the limited time that was given for the project.  With more time a nicer, more detailed solution would have been produced.
 		\subsection{Ron}
@@ -87,7 +87,7 @@
 			 But the biggest Problem was the limited time for reading into the topic, getting everything too run and than implementing some nice OpenGl stuff. I think there should have been more time.
 			
 	\section{Conclusion}
-		The use case of the project does not offer much possibilities to increase the skills learned in the OpenGL Course. Even though OpenGL elements are used within the application, the hardest part was to get the Vuzix and its emulator up--to--date. Information are rare and a big developer community does not exist for this kind of hardware.
+		The use case and limitations of the project does not offer much possibilities to increase the skills learned in the OpenGL Course. Even though OpenGL elements are used within the application, the hardest part was to get the Vuzix and its emulator up--to--date. Information are rare and a big developer community does not exist for this kind of hardware.
 		
 		Luckily Vuzix runs Android applications, which can be emulated with every other device. That is why the first steps took place using the android virtual device emulator provided by Eclipse.
 \end{multicols}
