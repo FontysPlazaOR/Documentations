@@ -26,18 +26,17 @@ The vuzix M100 Smart Glasses can be used for augmented reality. Using one eye fo
 \subsection{Android and OpenGL ES}
 The operating system on the smart glasses is Android. Apps are developed in Java. OpenGL Elements are displayed using the OpenGL ES technique. 
 \newline
-The Android SDK and the IDE Eclipse are needed to develop for Android. 
+The Android SDK and the IDE Eclipse are needed to develop for Android. \\
+The Vuzix OS 2, which is based on Android is limited due to the 
 \section{Architecture}
-The architecture relies on mainly three classes. Despite the \emph{MainActivity} that starts the internal \emph{Scanner}-App that reads the QR-Code, The \emph{TimeTableReader} class is needed to give information about the occupation of the rooms. Finaly the \emph{RenderActivity} displays the information in form of OpenGL elements on the screen.   
+The architecture relies on mainly three classes. Despite the \emph{MainActivity} that starts the internal \emph{Scanner}-App that reads the QR-Code, The \emph{TimeTableReader} class is needed to give information about the occupation of the rooms. Finaly the \emph{RoomScannerRenderActivity} with a \emph{RoomScannerRenderer} that display the information in form of OpenGL elements on the screen.  \\
+The \emph{TimeTableReader} class that reads information from the TimeTable API has been mocked to provide a realistic datas set. 
 \section{Discussion}
 The current project is a prototype that reads a QR-Code and based on that displays two different forms. Getting access to the real timetable is needed to put this application to use. Furthermore it is adviseable to extend the Renderer to display information not only about the current state of the room but also to give information about the next hours, days and weeks.\newline
 The lack of suitable, up-to-date libraries for augmented reality resulted in the fact that there is no augmented reality but only a Android Device that shows an OpenGL Element.  
 \section{Conclusion}
-One section per student (about INDIVIDUAL WORK, add your name): what is it about/for,
-your approach to learn about it, how does it fit in, how to use, main problems encountered,
-reflection to the learning goals as suitable.\\
 The use case of the project does not offer much possibilites to extense the skills learned in the OpenGL Course. Even though OpenGL elements are used within the application, the hardest part was to the get the Vuzix and its emulator uptodate. Information is rare and a big developer community does not exist for this kind of hardware. \\
-Luckily it is an Android application that can be emulated with every other device. That is why the first steps took place using the phone emulator provided by Eclipse. \\
+Luckily Vuzix runs Android applications, which can be emulated with every other device. That is why the first steps took place using the smartphone phone emulator provided by Eclipse. \\
 \subsection{Max}
 \begin{itemize}
 \item researched different technologies
@@ -45,7 +44,7 @@ Luckily it is an Android application that can be emulated with every other devic
 \item created \emph{ElementFree}, the element that is displayed when the room is free.
 \end{itemize}
  Problems occured in setting up the Vuzix for development. After the reorganisation of the Vuzix-Website not all information have been accessicable. \\
- Since the OpenGL ES technqiue is very simular to the JOGL and OpenGL exercises in the module \emph{OpenGL}, the drawing itself caused no problem. One negative aspect was the fact, that the emulator does not work, therefore the complete developer team had to rely on one Vuzix. This slowed down the development process.\\
+ Since the OpenGL ES technqiue is very simular to the JOGL and OpenGL exercises in the module \emph{OpenGL}, the drawing itself caused no problem,depite the fact that rendering an image as texture is not possible. Since this was no requirement, no image is used in the current state of the application.  One negative aspect was the fact, that the emulator does not work, therefore the complete developer team had to rely on one Vuzix. This slowed down the development process.\\
  A big problem was the limited time that was given for the project.  With more time, a nicer in more detailed solution would have been produced.
 \subsection{Ron}
 TODO
