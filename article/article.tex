@@ -37,7 +37,7 @@
 	\section{Technologies Used}
 	Several technologies for virtual and augmented reality are available. All these technologies have different positive aspects and drawbacks. Some of them mentioned in the following subsections.
 		\subsection{Google CardBoard}
-			The initial idea was to use Googles CardBoard for displaying the Element that indicates whether a room is available or not. Before the start of the development, it occurred that Google CardBoard is good for virtual reality where there is no connection to the outside world. Augmented reality, where still a part of the \emph{real world} is shown is hardly possible with Google CardBoards since the camera is one sided and no overlaying is possible.
+			The initial idea was to use Googles CardBoard for displaying the Element that indicates whether a room is available or not. Before the start of the development, it occurred that Google CardBoard is good for virtual reality where is no connection to the outside world. Augmented reality, where still a part of the \emph{real world} is shown, is hardly possible with Google CardBoards since the camera is one sided and no overlaying is possible.
 	
 			Another drawback of the CardBoard is the fact that both eyes are needed to see the 3D Elements.   
 		
@@ -50,17 +50,17 @@
 			Apps for the M100 can be developed by using the IDE Eclipse together with the Android SDK API-Level 15. Also the firmware version 2.x for the Vuzix needs to be flashed.
 
 	\section{Architecture}
-		The architecture relies on mainly three classes. Despite the \texttt{MainActivity} that starts the internal \emph{Scanner}--App what reads the QR-Code, the \texttt{TimeTableReader} class is needed to give information about the occupation of the rooms. Finally the \texttt{RoomScannerRenderActivity} with a \texttt{RoomScannerRenderer} that display the information in form of OpenGL elements on the screen.
+		The architecture relies on mainly three classes. After the \texttt{MainActivity} started the internal \emph{Scanner}--App, which reads the QR--Code, the \texttt{TimeTableReader} class is needed to give information about the occupation of the rooms. Finally the \texttt{RoomScannerRenderActivity} displays the information in form of OpenGL elements on the screen by using a \texttt{RoomScannerRenderer}.
 		
 		The \texttt{TimeTableReader} class that reads information from the \emph{TimeTable API} has been mocked to provide a realistic dataset.
 		
 	\section{Discussion}
-		The current project is a prototype that reads a QR-Code and based on that displays two different forms. Getting access to the real timetable is needed to put this application to use. Furthermore it is adviseable to extend the Renderer to display information not only about the current state of the room but also to give information about the next hours, days and weeks.
+		The current project is a prototype that reads a QR-Code and based on that it displays two different forms. It is essential to get access to the real timetable of classrooms to use this application. Furthermore it is advisable to extend the renderer to display information not only about the current state of the room but also to give information about the next hours, days and weeks.
 		
 		The lack of suitable, up-to-date libraries for augmented reality resulted in the fact that there is no augmented reality but only a Android Device that shows an OpenGL Element.  
 
 	\section{Individual Work}
-		In this section will be explained who worked on what.
+		In this section it will be explained who worked on which topic.
 		\subsection{Max}
 			\begin{itemize}
 				\item Researched different technologies
@@ -71,23 +71,23 @@
 			 
 			 Since the OpenGL ES technique is very similar to the JOGL and OpenGL exercises in the module \emph{OpenGL}, the drawing itself caused no problem, despite the fact that rendering an image as texture is not possible. Since this was no requirement, no image is used in the current state of the application.  One negative aspect was the fact, that the emulator does not work, therefore the complete developer team had to rely on one Vuzix. This slowed down the development process.
 			 
-			 A big problem was the limited time that was given for the project.  With more time, a nicer in more detailed solution would have been produced.
+			 A big problem was the limited time that was given for the project.  With more time a nicer, more detailed solution would have been produced.
 		\subsection{Ron}
 			\begin{itemize}
 				\item Thinking about possible solutions for the project.
-				\item Finalize of the project and presentation.
+				\item Finalize of the project paper and presentation.
 				\item Created \texttt{ElementOccupied}, the element that is displayed when the room is occupied.
 			\end{itemize}
-			Flashing the Vuzix to a version higher than 2.x was a small problem at the beginning because it need some time to get into how it works. Afterwards we could use the Vuzix in our planned application.
+			Flashing the Vuzix to a version higher than 2.x was a small problem at the beginning because it needed some time to get into how it works. Afterwards we could use the Vuzix in our planned application.
 			
-			Writing the application was also a bit difficult because no much information are available for programming with the Vuzix. Most of the given webpages show a 404--error.
+			Writing the application was also a bit difficult because only a few information are available for programming with the Vuzix. Most of the given webpages showed a 404--error.
 			 
-			 Some trouble occurred by developing the graphic stuff because of the small differences between C++ and Java. Also the problem that the virtual device emulator not worked creates a badly handicap for the developing phase.
+			 Some trouble occurred by developing the graphic stuff because of the small differences between C++ and Java. Also the problem that the virtual device emulator did not work created a badly handicap for the developing phase.
 			 
-			 But the biggest Problem was the limited time for reading into the topic, get everything too run and than implement some nice OpenGl stuff. I think there should be more time.
+			 But the biggest Problem was the limited time for reading into the topic, getting everything too run and than implementing some nice OpenGl stuff. I think there should have been more time.
 			
 	\section{Conclusion}
-		The use case of the project does not offer much possibilities to increase the skills learned in the OpenGL Course. Even though OpenGL elements are used within the application, the hardest part was to the get the Vuzix and its emulator up--to--date. Information is rare and a big developer community does not exist for this kind of hardware.
+		The use case of the project does not offer much possibilities to increase the skills learned in the OpenGL Course. Even though OpenGL elements are used within the application, the hardest part was to get the Vuzix and its emulator up--to--date. Information are rare and a big developer community does not exist for this kind of hardware.
 		
 		Luckily Vuzix runs Android applications, which can be emulated with every other device. That is why the first steps took place using the android virtual device emulator provided by Eclipse.
 \end{multicols}
